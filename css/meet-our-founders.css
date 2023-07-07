@@ -1,0 +1,153 @@
+
+.hero {
+    background-image: url("../assets/images/people/ybla-founders.png");
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: center;
+    background-size: cover;
+    width: 1440px;
+    height: 763px;
+    padding: 30% 0 0 15%;
+    box-sizing: border-box;
+    color: white;
+
+}
+.hero > h3 {
+    font-size: 60px;
+    font-weight: 200;
+    animation: fade-in 8000ms;
+}
+.hero > h2 {
+    font-size: 80px;
+    font-weight: 700;
+    border-bottom: solid 1px white;
+    width: fit-content;
+    animation: fade-in 12000ms;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 32px;
+}
+
+.bio, .bio > .bio-img {
+    border-radius: 2px;
+    animation: slideUpLeft
+}
+
+.bio {
+    --border-color: rgba(255,255,255, 0.4);
+    --offset: -48px;
+    --timing: 800ms;
+
+    width: 829px;
+    height: 526px;
+    margin: 12vh auto;
+    position: relative;
+    border: solid 1px var(--border-color);
+}
+
+.bio-img {
+    --border: solid 1px var(--border-color);
+    width: 385px;
+    height: 556px;
+
+    padding: 0;
+    position: absolute;
+    top: var(--offset);
+    transition: left var(--timing) ease, top var(--timing) ease, right var(--timing) ease; /*, opacity var(--timing) ease;*/
+    border-top: var(--border);
+    opacity: 1;
+}
+
+.bio-content {
+    height: 100%;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    padding: 64px 32px 16px;
+    box-sizing: border-box;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.bio-content > h2 {
+    font-size: 40px;
+    font-weight: normal;
+}
+.bio-content > h3 {
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+
+.bio-1 {
+    background: var(--red);
+}
+
+.bio-1 > .bio-img {
+    left: var(--offset);
+}
+
+.bio-1 > .bio-content {
+    right: 0;
+    border-radius: 0 10px 10px 0;
+}
+
+.bio-2 {
+    background: var(--violet);
+}
+
+.bio-2 > .bio-img {
+    right: var(--offset);
+}
+
+.bio-2 > .bio-content {
+    left: 0;
+    border-radius: 8px 0 0 8px;
+}
+
+.bio:hover {
+    --offset: -64px;
+}
+.bio:hover .bio-img {
+    opacity: 1;
+}
+
+.quote {
+    background-image: linear-gradient(45deg, var(--violet), var(--red));
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 32px;
+}
+.quote p {
+    width: 600px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 16px 1fr;
+    gap: 64px;
+}
+.container > img {
+    width: 48px;
+}
+.container > p {
+    width: 724px;
+    font-size: 18px;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to { 
+        opacity: 1;
+    }
+}
+

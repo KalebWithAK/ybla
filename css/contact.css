@@ -1,0 +1,76 @@
+main {
+    width: 600px;
+    margin: 32px auto;
+    box-sizing: border-box;
+    padding: 0;
+    border-radius: 4px;
+}
+
+h2 {
+    padding-left: 4px;
+    font-size: 80px;
+    font-weight: 400;
+}
+
+form {
+    --spacing: 16px
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    position: relative;
+}
+form > * {
+    width: 100%;
+    border-radius: 4px;
+}
+
+label {
+    padding-left: 4px;
+}
+
+input, textarea {
+    background-color: rgba(255,255,255, 0.12);
+    border: none;
+    color: white;
+    font-size: 18px;
+     padding: 16px;
+     padding-left: 4px;
+     box-sizing: border-box;
+}
+
+input {
+     height: 24px;
+     
+
+}
+textarea {
+    padding-top: 4px;
+}
+
+main .button {
+    box-sizing: content-box;
+    position: absolute;
+    width: 80px;
+    height: 32px;
+    padding: 0;
+    top: 95%;
+    background: var(--gold);
+    color: var(--blue);
+    font-size: 18px;
+    box-shadow: 
+        rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, 
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    transition: width var(--timing), background-color var(--timing), box-shadow var(--timing);
+    font-weight: 200;
+}
+.button:hover {
+    width: 88px;
+    background-color: var(--blue);
+    color: white;
+    
+}
+.button:active {
+    width: 80px;
+}

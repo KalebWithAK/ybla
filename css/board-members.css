@@ -1,0 +1,69 @@
+main {
+    width: 906px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 8px;
+    padding-bottom: 32px;
+}
+h2 {
+    margin-bottom: 24px;
+    width: 100%;
+    text-align: center;
+}
+.card > img {
+    width: 218px;
+    border-radius: 4px 4px 0 0;
+}
+.card > .content {
+    width: 178px;
+    height: 100px;
+    padding: 20px;
+}
+
+.card > .content {
+    font-weight: 200;
+    line-height: 16px;
+    
+}
+.card > .content > h3 {
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 20px;
+}
+.card > .content > h4 {
+    font-weight: 200;
+    font-size: 16px;
+    margin: 8px 0;
+}
+.card > .content > p {
+    font-size: 16px;
+    line-height: normal;
+}
+
+main > .card:nth-of-type(5) {
+    margin-top: -108px;
+}
+main > .card:nth-of-type(7) {
+    margin-top: -108px;
+}
+main > .card:nth-of-type(8) {
+    margin-top: -96px;
+}
+main > .card:nth-of-type(10) {
+    margin-top: -76px;
+}
+main > .card:nth-of-type(11) {
+    margin-top: -32px;
+}
+main > .card:nth-of-type(12) {
+    margin-top: -96px;
+}
+main > .card:nth-of-type(13) {
+}
+main > .card:nth-of-type(14) {
+}
+main > .card:nth-of-type(15) {
+}
