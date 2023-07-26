@@ -6,6 +6,7 @@
     --gold: #c2a534;
     --blue: #0f6a8e;
     --light-blue: #77a1b4;
+    --dark-blue: rgb(34, 56, 77);
     --tan: #dbd0a5;
 }
 
@@ -55,27 +56,8 @@ header > h1 {
     width: fit-content;
 }
 header > .button {
-    --timing: 800ms;
     grid-area: button;
-    box-sizing: border-box;
-    padding: 4px;
-    font-size: 16px;
     justify-self: right;
-    background-color: var(--gold);
-    color: var(--blue);
-    width: 120px;
-    height: 28px;
-    text-align: center;
-}
-header > .button:hover {
-    color: white;
-    background-color: var(--blue);
-    border-radius: 8px;
-    width: 128px;
-}
-header > .button:active {
-    border-radius: 16px;
-    width: 120px;
 }
 header > nav {
     grid-area: nav;
@@ -142,7 +124,6 @@ a, .link {
     padding-bottom: 2px;
     transition: color var(--timing);
 }
-
 a:hover, .link:hover {
     color: rgba(255,255,255, 0.9);
 }
@@ -212,4 +193,26 @@ p {
 }
 .dropdown:hover > .dropdown-content > a:hover {
     background-color: rgba(255,255,255, 0.2);
+}
+
+.button {
+    --timing: 800ms;
+    box-sizing: border-box;
+    padding: 4px;
+    font-size: 16px;
+    background-color: var(--gold);
+    color: var(--blue);
+    width: 120px;
+    height: 28px;
+    text-align: center;
+}
+.button:hover {
+    color: white;
+    background-color: var(--blue);
+    border-radius: 8px;
+    width: 128px;
+}
+.button:active {
+    border-radius: 16px;
+    width: 120px;
 }
